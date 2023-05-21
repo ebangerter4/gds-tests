@@ -22,3 +22,7 @@ def J(source, top, bottom):
     product = (100*top*bottom) # Greatest value will be when they're both 0.5
     return product
 opt = get_meep_adjoint_optimizer(component=Component("mmi1x2"))
+
+#%%
+c=gf.components.mmi2x2()
+c
